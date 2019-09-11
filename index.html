@@ -1,0 +1,900 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+    <meta name="author" content="Theme Industry">
+    <!-- description -->
+    <meta name="description" content="Perspectivas en Innovación
+Digital Financiera">
+    <!-- keywords -->
+    <meta name="keywords" content="">
+    <!-- title -->
+    <title>PULSO 2019 - Cobiscorp</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css"/>
+    <!-- cube Portfolio -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <!-- revolution slider -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css"/>
+    <!-- owl carousel -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Swiper CSS File -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- component.css push nav-->
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <!-- bundle css -->
+    <link rel="stylesheet" href="css/core.css"/>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/custom.css"/>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country',   'Encuestados'],
+          ['Peru', 98],
+          ['Venezuela', 98],
+          ['Chile', 88],
+          ['Argentina', 71],
+          ['Bolivia', 62],
+          ['Paraguay', 57],
+          ['Colombia', 50],
+          ['Mexico', 49],
+          ['Ecuador', 48],
+          ['Costa Rica', 43],
+          ['El Salvador', 41],
+          ['Panama', 37],
+          ['Guatemala', 35],
+          ['Honduras', 29],
+          ['Republica Dominicana', 24],
+          ['Nicaragua', 12],
+          ['Uruguay', 8],
+          ['Puerto Rico', 2],
+          ['Otro', 4],
+
+        ]);
+
+       
+        var options = {
+    //Put your colour hex code here
+    //region: '019',
+    //colorAxis: {minValue: 0, maxValue: 552,  colors: ['#00A7CD', '#003361', '#033154', '#04314C', '#052F44',  '#082D49']},
+    colors: ['#0F60A8','#003361'],
+    backgroundColor: 'transparent',
+    legend:  'none',
+     colorAxis: { colors: ['#00A7CD', '#003361']},
+     
+
+   
+};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Entidad', 'Porcentaje'],
+          ['Banco comercial / corporativo',     420],
+          ['Banco universal',      131],
+          ['Banco retail / personas',  127],
+          ['Otros', 58],
+          ['Cooperativa / Credit Union', 51],
+          ['Fintech', 16],
+          ['Fondo de Inversión', 16],
+          ['Empresa de seguros', 11],
+          ['SOCAPS/ SOFIPO / SOFOM', 10],
+          ['Banco de inversiones',    9],
+          ['Wealth Management / Gestión patrimonial',    7]
+        ]);
+
+        var options = {
+          pieHole: 0.6,
+          backgroundColor: 'transparent',
+          'legend':'bottom',
+          legendTextStyle: {
+            color: 'black',fontSize: '15', padding: '28',
+          },
+
+          slices: {
+            0: { color: '#1c1b38' },
+            1: { color: '#302f58' },
+            2: { color: '#561b4a' },
+            3: { color: '#7c376d' },
+            4: { color: '#aa5b9c' },
+            5: { color: '#f2c0da' },
+            6: { color: '#e97889' },
+            7: { color: '#d85966' },
+            8: { color: '#bc3d4a' },
+            9: { color: '#952e37' },
+            10: { color: '#6b1e2b' }
+          }
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
+
+<div id="loader">
+<div class='loader'></div>
+</div>
+
+<!-- start header -->
+<header class="center-logo-header">
+    <!-- start navigation -->
+    <nav class="navbar navbar-default bootsnav navbar-fixed-top header-light bg-transparent nav-box-width nav-white-list menu-logo-center on no-full">
+        <div class="container nav-header-container">
+            <div class="row">
+                <!-- start logo -->
+                <div class="center-logo">
+                    <a href="#home" title="Logo" class="logo scroll"><img src="images/logo-blue-black.png" class="logo-dark" alt="finza"><img src="images/logo-red-white.png" alt="finza" class="logo-light default"></a>
+                </div>
+                <!-- end logo -->
+                <div class="col-md-12 col-sm-12 col-xs-12 accordion-menu">
+                    <button type="button" class="navbar-toggle collapsed pull-right display-none" aria-hidden="true">
+                    </button>
+                    <div class="navbar-collapse collapse no-padding-right">
+                        <ul class="nav navbar-nav navbar-left text-right no-margin alt-font text-normal width-40 sm-width-100 sm-text-left hidden-sm hidden-xs" data-in="fadeIn" data-out="fadeOut">
+                            <li class="active">
+                                <a href="#home" class="scroll">Home</a>
+                            </li>
+                            <li>
+                                <a href="#work" class="scroll">Participantes</a>
+                            </li>
+                            <li>
+                                <a href="#instituciones" class="scroll">Instituciones</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal width-40 sm-width-100 hidden-sm hidden-xs" data-in="fadeIn" data-out="fadeOut">
+                                                      <li>
+                                <a href="#productos" class="scroll">Productos</a>
+                            </li>
+                            <li>
+                                <a href="#inversion" class="scroll">Inversión</a>
+                            </li>
+
+                            <li>
+                                <a href="#quienes" class="scroll">Quienes Invierten</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+
+    <!-- side nav -->
+    <div id="menu_bars" class="right menu_bars">
+        <span class="t1"></span>
+        <span class="t2"></span>
+        <span class="t3"></span>
+    </div>
+    <div class="sidebar_menu">
+        <nav class="pushmenu pushmenu-right">
+            <a class="push-logo" href="#."><img src="images/logo-blue-white.png" alt="logo"></a>
+            <ul class="push_nav centered">
+                <li class="clearfix">
+                    <a href="#home" class="scroll"><span>01.</span>Home</a>
+
+                </li>
+                <li class="clearfix">
+                    <a href="#work" class="scroll"> <span>02.</span>Participantes</a>
+
+                </li>
+                <li class="clearfix">
+                    <a href="#instituciones" class="scroll"> <span>03.</span>Instituciones</a>
+
+                </li>
+                <li class="clearfix">
+                    <a href="#productos" class="scroll"> <span>04.</span>Productos</a>
+
+                </li>
+                
+
+                <li class="clearfix">
+                    <a href="#inversion" class="scroll"> <span>05.</span>Inversión</a>
+
+                </li>
+                <li class="clearfix">
+                    <a href="#quienes" class="scroll"> <span>07.</span>Quienes invierten</a>
+
+                </li>
+
+            </ul>
+            <div class="medium-icon side-nav-social-icon list-inline">
+                <a class="facebook-bg-hvr" target="_blank" href="https://www.facebook.com/COBISLATAM/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                <a class="twitter-bg-hvr" href="https://twitter.com/cobiscorp?lang=en"><i class="fa fa-twitter" target="_blank" aria-hidden="true"></i></a>
+
+               
+            </div>
+        </nav>
+    </div>
+    <!-- side nav end -->
+</header>
+<!-- end header -->
+
+<!-- start slider -->
+<section class="fadeIn example no-padding no-transition" id="home">
+<h1 class="display-none no-padding no-margin" aria-hidden="true">PULSO</h1>
+<h2 class="display-none no-padding no-margin" aria-hidden="true">PULSO</h2>
+
+            <div id="rev_slider_24_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="website-intro" data-source="gallery" style="background:#000000;padding:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+                <div id="rev_slider_24_1" class="rev_slider fullscreenbanner tiny_bullet_slider" style="display:none;" data-version="5.4.1">
+                    <ul>	<!-- SLIDE  -->
+                        <li data-index="rs-67" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="600"  data-thumb="images/woman2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/woman2.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                                 id="slide-67-layer-9"
+                                 data-x="['center','center','center','center']" data-hoffset="['-112','-43','-81','44']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-219','-184','-185','182']"
+                                 data-width="['250','250','150','150']"
+                                 data-height="['150','150','100','100']"
+                                 data-whitespace="nowrap"
+
+                                 data-type="shape"
+                                 data-slicey_offset="250"
+                                 data-slicey_blurstart="0"
+                                 data-slicey_blurend="20"
+                                 data-responsive_offset="on"
+
+                                 data-frames='[{"delay":300,"speed":1000,"frame":"0","from":"rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3700","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                 data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]"
+                                 data-paddingbottom="[0,0,0,0]"
+                                 data-paddingleft="[0,0,0,0]"
+
+                                 style="z-index: 5;background-color:rgba(0, 0, 0, 0.3);"> </div>
+
+                          
+
+                            <!-- LAYER NR. 49 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-68-layer-2"
+                                 data-x="['center','center','center','center']" data-hoffset="['1','1','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']"
+                                 data-fontsize="['130','130','100','80']"
+                                 data-lineheight="['70','70','60','50']"
+                                 data-width="['none','none','481','360']"
+                                 data-height="none"
+                                 data-whitespace="['nowrap','nowrap','normal','normal']"
+
+                                 data-type="text"
+                                 data-responsive_offset="on"
+
+                                 data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['center','center','center','center']"
+                                 data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]"
+                                 data-paddingbottom="[0,0,0,0]"
+                                 data-paddingleft="[0,0,0,0]"
+
+                                 style="z-index: 19; white-space: nowrap; font-size: 90px; line-height: 90px; font-weight: 500; color: #ffffff;font-family:'Raleway', sans-serif;">PULSO</div>
+
+                            <!-- LAYER NR. 50 -->
+                            <div class="tp-caption   tp-resizeme"
+                                 id="slide-68-layer-3"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['90','90','60','30']"
+                                 data-fontsize="['30','30','30','25']"
+                                 data-lineheight="['35','35','35','30']"
+                                 data-width="['480','480','480','360']"
+                                 data-height="none"
+                                 data-whitespace="normal"
+
+                                 data-type="text"
+                                 data-responsive_offset="on"
+
+                                 data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['center','center','center','center']"
+                                 data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]"
+                                 data-paddingbottom="[0,0,0,0]"
+                                 data-paddingleft="[0,0,0,0]"
+
+                                 style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 25px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:'Open Sans', sans-serif;">Perspectivas en Innovación Digital Financiera 2019</div>
+
+                            <!-- LAYER NR. 51 -->
+                            <div class="tp-caption rev-btn tp-resizeme"
+                                 id="slide-68-layer-7"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['200','200','160','120']"
+                                 data-width="250"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-type="button"
+                                 data-actions=''
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
+                                 data-textAlign="['center','center','center','center']"
+                                 style="z-index: 21"><a href="#work" class="btn btn-blue btn-hvr-red btn-rounded btn-extra-large scroll ">Ver Resultados</a>
+                            </div>
+                        </li>
+                    </ul>
+            </div><!-- END REVOLUTION SLIDER -->
+            </div>
+<!-- end slider -->
+</section>
+<!-- end slider -->
+
+<section id="work" class="portfolio no-transition">
+
+    <div class="container">
+
+        <div class="row">
+            <!-- title section -->
+            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                <div class="area-heading text-center margin-70px-bottom">
+                    <div class="text-medium text-red margin-10px-bottom">- Participantes -</div>
+                    <h3 class="area-title alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                        ¿Quiénes participaron en el estudio?</h3>
+                    <div class="seperator margin-20px-bottom">
+                        <hr class="seperator-two">
+                        <hr class="seperator-one">
+                    </div>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">En el 2019, los líderes son Perú, Venezuela y Chile con el
+33% de participación.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- filter links -->
+
+
+            <div class="clearfix"></div>
+
+
+            <!-- gallery -->
+            
+<div id="regions_div" style="width: auto; height: auto;"></div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="instituciones" class="portfolio no-transition fondointituciones">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- title section -->
+            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                <div class="area-heading text-center margin-70px-bottom">
+                    <div class="text-medium text-red margin-10px-bottom">- Instituciones -</div>
+                    <h3 class="area-title  alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                        Tipos de instituciones financieras</h3>
+                    <div class="seperator margin-20px-bottom">
+                        <hr class="seperator-two">
+                        <hr class="seperator-one">
+                    </div>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Casi la mitad (50%) de la muestra corresponde a representantes de banco comercial. El 30% de los
+encuestados trabajan para un banco retail o un banco universal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row dona">
+            <!-- filter links -->
+
+
+
+            <!-- gallery -->
+            
+<div id="donutchart" style="width: 100%; height: 700px; "></div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="productos" class="portfolio no-transition fondoproductos">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- title section -->
+            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                <div class="area-heading text-center margin-70px-bottom">
+                    <div class="text-medium text-red margin-10px-bottom">- Productos -</div>
+                    <h3 class="area-title alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                       ¿Qué productos desarrollan las empresas según sus
+objetivos de negocio?</h3>
+                    <div class="seperator margin-20px-bottom">
+                        <hr class="seperator-two">
+                        <hr class="seperator-one">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+    <img src="images/012.png">
+    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom bordearriba">Aplicación Móvil</p>
+
+    <br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">29.21</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color1" role="progressbar" aria-valuenow="44"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+        <img src="images/013.png" >
+         <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom bordearriba">Banca en Línea </p>
+
+         <br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">27.50</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color1" role="progressbar" aria-valuenow="35"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+        <img src="images/01.png" >
+         <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom bordearriba">Call Center</p>
+         <br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">14.25</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color1" role="progressbar" aria-valuenow="34"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+    </div>
+
+     
+
+        </div>
+
+
+    </div>
+</section>
+
+<section id="inversion" class="xs-text-center fondoinversion">
+    <div class="container">
+        <div class="row margin-80px-bottom">
+            <div class="about-team">
+                <div class="col-sm-5">
+                    <div class="team-quote xs-margin-50px-bottom">
+                        <h3 class="area-title alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">¿Cuánto están invirtiendo las instituciones financieras en
+innovación digital?</span></h4>
+                        <p class="xs-margin-lr-auto">
+                            <span class="text-red font-weight-600 ">59%</span> 
+                            De los encuestados aseguran conocer el monto de inversión en
+innovación de sus instituciones financieras.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+
+                    <div class="c-progress text-left xs-margin-15px-left">
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text"> De $0 a $1 millón
+                                
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">23.13%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color1" role="progressbar" aria-valuenow="23.13"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text">De $1 a $5 millones
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">15.54%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color2" role="progressbar" aria-valuenow="15.54"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text"> De $5 a $10 millones
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">9.35%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color3" role="progressbar" aria-valuenow="9.35"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text"> De $10 a $15 millones
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">4.21%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color4" role="progressbar" aria-valuenow="4.21"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text"> Más de $15 millones
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">6.89%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color5" role="progressbar" aria-valuenow="6.89"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row custom-progress width-100 margin-10px-bottom">
+                            <div class="col-xs-5 p-text"> No lo sé
+                            </div>
+                            <div class="col-xs-7 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font">40.89%</p>
+                                <div class="progress">
+                                    <div class="progress-bar color7" role="progressbar" aria-valuenow="40.89"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+<section id="quienes" class="portfolio no-transition fondomapa">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- title section -->
+            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                <div class="area-heading text-center margin-70px-bottom">
+                    <div class="text-medium text-red margin-10px-bottom">- Quienes Invierten -</div>
+                    <h3 class="area-title alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                       Países líderes en inversión en innovación digital financiera</h3>
+                    <div class="seperator margin-20px-bottom">
+                        <hr class="seperator-two">
+                        <hr class="seperator-one">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<br><br>
+        <div class="row">
+
+            
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+
+    <img src="images/bandera019.png">
+
+   
+<br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">52.6</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color1" role="progressbar" aria-valuenow="15"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+
+    <img src="images/bandera015.png">
+
+   
+<br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">31</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color2" role="progressbar" aria-valuenow="14"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+
+    <img src="images/rdom.png">
+
+   
+<br>
+     <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">30</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color3" role="progressbar" aria-valuenow="13"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+
+
+
+
+
+
+        </div>
+<br>
+<br>
+<br>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+        <img src="images/bandera013.png" >
+         
+ <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">28.6</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color4" role="progressbar" aria-valuenow="10"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center img-responsive">
+        <img src="images/bandera014.png" >
+         
+ <div class="custom-progress width-100 margin-10px-bottom text-center">
+                            <div class="col-xs-2 p-text"> 
+                                <span class="count">22</span>%
+                            </div>
+                            <div class="col-xs-9 no-padding-right">
+                                <p class="text-extra-dark-gray text-medium margin-5px-bottom alt-font"> </p>
+                                <br>
+                                <div class="progress">
+
+                                    <div class="progress-bar color5" role="progressbar" aria-valuenow="9"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+
+            
+
+    
+
+    
+
+    </div>
+
+
+    </div>
+</section>
+
+
+<!-- start features -->
+<section id="features" class="bg-very-light-gray">
+
+    <div class="container">
+
+        <!-- about slider-->
+        <div class="row">
+            <div class="col-md-6 hidden-sm hidden-xs" aria-hidden="true">
+                <div class="feature-bg-img"></div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="feature-quote xs-margin-50px-bottom sm-text-center">
+                    <h4 class="area-title alt-font text-dark-gray margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                        <span class="text-red font-weight-500">PULSO</span> Perspectivas<br> en innovación <span class="text-blue font-weight-500">Financiera</span></h4>
+                    <p class="xs-margin-lr-auto margin-20px-bottom">Los avances tecnológicos, las expectativas de los clientes en materia de servicio y los cambios en el panorama regulatorio están abriendo las puertas a la innovación disruptiva en los servicios financieros.
+                    </p>
+                    <p class="xs-margin-lr-auto">Te invitamos a descargar el reporte completo</p>
+                    <a href="http://conoce.cobiscorp.com/2018-encuesta-tecnologia-bancaria-financiera-latinoamerica-pulso" target="_blank" class="btn btn-blue btn-rounded btn-large margin-50px-top sm-margin-30px-top">Descargar Reporte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- end features -->
+
+
+
+
+<!-- footer -->
+<footer class="padding-40px-tb bg-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="text-small text-white xs-text-center xs-margin-15px-bottom">© 2019 PULSO - 
+                    <a href="#." class="text-white">Cobiscorp</a></div>
+            </div>
+            
+            <div class="col-sm-3">
+                <div class="footer-social text-right xs-text-center xs-margin-10px-top">
+                    <a href="https://www.facebook.com/COBISLATAM/" target="_blank" class="facebook-text-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/cobiscorp?lang=en" class="twitter-text-hvr"><i class="fa fa-twitter" target="_blank" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end-->
+
+<!-- start scroll to top -->
+<a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+<!-- end scroll to top  -->
+
+
+<!-- javascript libraries -->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.appear.min.js"></script>
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- magnific popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- flip -->
+<script src="js/jquery.flip.min.js"></script>
+<!-- fancybox -->
+<script src="js/jquery.fancybox.min.js"></script>
+<!-- Swiper Core Javascript -->
+<script src="js/swiper.min.js"></script>
+<!-- Morphext js -->
+<script src="js/morphext.min.js"></script>
+<!-- wow -->
+<script src="js/wow.js"></script>
+<!-- parallax -->
+<script src="js/parallaxie.min.js"></script>
+<!-- particles -->
+<script src="js/particles.min.js"></script>
+<!-- isotope.pkgd.min js -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- revolution -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLICEY ADD-ON FILES -->
+<script  src="revolution/js/revolution.addon.slicey.min.js"></script>
+<!-- revolution extension -->
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- Google Map Api -->
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script>
+<script src="js/map.js"></script>
+<!-- setting -->
+<script src="js/main.js"></script>
+</body>
+</html>
